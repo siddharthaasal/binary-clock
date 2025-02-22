@@ -72,7 +72,7 @@ function App() {
           </div>
 
           {/* Digital Time Display - Outside the Box */}
-          <div className="mt-6 text-4xl font-mono text-[#06b347] tracking-wider">
+          <div className="mt-6 text-3xl font-mono text-[#06b347] tracking-wider">
             {currTime}
           </div>
 
