@@ -2,7 +2,7 @@
 
 A minimalistic **binary clock** with a retro aesthetic, built using **React & Tailwind CSS**.  
 
-🚀 **Live Demo**: [Click Here](your-demo-link)  
+🚀 **Live Demo**: [Click Here](https://binary-clock-v0.vercel.app/)  
 
 ## 📜 About  
 
@@ -14,11 +14,7 @@ This project visually represents time in **binary format**, inspired by old-scho
 ✅ **Live Time Updates** – Auto-updating clock in binary format  
 ✅ **Responsive UI** – Optimized for all screen sizes  
 ✅ **Minimal & Lightweight** – No unnecessary dependencies  
-
-## 🖼️ Preview  
-
-![Binary Clock Screenshot](your-screenshot-link)  
-
+ 
 ## 🏗️ Installation  
 
 Clone the repo and install dependencies:  
@@ -34,7 +30,7 @@ npm run dev
 
 Want to learn more about the design and implementation? Check out the full blog post:
 
-📝 **Read on Medium** → [Click Here]()
+📝 **Read on Medium** → [Click Here](https://medium.com/@siddharthaasal/understanding-time-in-binary-f7ab6ea5f5b0)
 
 ## 🛠️ Tech Stack  
 

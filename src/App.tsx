@@ -87,7 +87,7 @@ function App() {
 
         <div className="mt-4 sm:mt-6 text-sm sm:text-base text-[#06b347] underline cursor-pointer hover:text-green-600">
           <a
-            href="https://medium.com/your-blog-link"
+            href="https://medium.com/@siddharthaasal/understanding-time-in-binary-f7ab6ea5f5b0"
             target="_blank"
             rel="noopener noreferrer"
           >
