@@ -52,73 +52,74 @@ function App() {
     <>
       <div className="min-h-screen bg-[#020202] flex flex-col items-center p-4 font-['Press_Start_2P']">
         {/* Title */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#06b347] uppercase tracking-wider mt-12">
+        <h1 className="text-xl sm:text-2xl md:text-4xl text-[#06b347] uppercase tracking-wider mt-8 sm:mt-12">
           Binary Clock
         </h1>
 
-        <div className="relative flex flex-col items-center mx-auto mt-12 p-4">
+        <div className="relative flex flex-col items-center mx-auto mt-8 sm:mt-12 p-3 sm:p-4">
           {/* Binary Clock Frame with Bezel */}
-          <div className="border-4 border-[#04471c] bg-black shadow-xl rounded-md pt-5 pb-5 px-5 relative">
+          <div className="border-4 border-[#04471c] bg-black shadow-xl rounded-md pt-3 pb-3 px-3 sm:pt-5 sm:pb-5 sm:px-5 relative">
             {/* Inner Display */}
-            <div className="border-2 border-[#06632c] bg-black shadow-lg rounded-sm p-4">
+            <div className="border-2 border-[#06632c] bg-black shadow-lg rounded-sm p-3 sm:p-4">
               {/* Grid Display */}
-              <div className="grid grid-cols-6 gap-2 px-6 pt-6 pb-4">
+              <div className="grid grid-cols-6 gap-1 sm:gap-2 px-4 sm:px-6 pt-4 sm:pt-6 pb-3 sm:pb-4">
                 {grid.map((row, rowIndex) =>
                   row.map((cell, colIndex) => (
                     <div
                       key={`${rowIndex}-${colIndex}`}
-                      className={`w-8 h-8 transition-all shadow-sm rounded-sm 
-                      ${cell == 1 ? "bg-green-700" : "bg-[#868687]"}`}
+                      className={`w-6 h-6 sm:w-8 sm:h-8 transition-all shadow-sm rounded-sm 
+                      ${cell == "1" ? "bg-green-700" : "bg-[#868687]"}`}
                     />
                   ))
                 )}
               </div>
 
               {/* Digital Time Display */}
-              <div className="mt-2  flex justify-center text-[#06b347] tracking-widest text-md font-light">
+              <div className="mt-1 sm:mt-2 flex justify-center text-[#06b347] tracking-widest text-sm sm:text-md font-light">
                 {currTime}
               </div>
             </div>
           </div>
 
           {/* Simple Base */}
-          <div className="w-56 h-5 bg-[#04471c] border-2 border-[#06632c] border-t-0 mt-0 shadow-md rounded-b-none"></div>
+          <div className="w-40 sm:w-56 h-4 sm:h-5 bg-[#04471c] border-2 border-[#06632c] border-t-0 mt-0 shadow-md rounded-b-none"></div>
         </div>
 
-        <div className="mt-6 text-base sm:text-md text-[#06b347] underline cursor-pointer hover:text-green-600">
+        <div className="mt-4 sm:mt-6 text-sm sm:text-base text-[#06b347] underline cursor-pointer hover:text-green-600">
           <a
             href="https://medium.com/your-blog-link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Behind the Code: Read on Medium →
+            Behind the Code →
           </a>
         </div>
 
-        <footer className="w-full relative mt-24 bg-[#020202] text-center text-gray-400 text-xs font-light">
-          <p className="flex justify-center gap-4">
+        <footer className="w-full relative mt-12 sm:mt-24 bg-[#020202] text-center text-gray-400 text-xs sm:text-sm font-light p-2 sm:p-4">
+          <p className="flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-4">
             <a
               href="https://github.com/SiddharthAasal/binary-clock"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-green-500 hover:underline ml-2 "
+              className="text-green-500 hover:underline"
             >
               GitHub Repo
             </a>
             <span>
               © 2025{" "}
               <a
-                href="https://github.com/SiddharthAasal"
+                href="https://www.linkedin.com/in/siddharthaasal/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-500 hover:underline "
+                className="text-green-500 hover:underline"
               >
                 Siddharth Aasal
               </a>
             </span>
-            <span className="ml-2 ">MIT Licensed</span>
+            <span>MIT Licensed</span>
           </p>
         </footer>
+
       </div>
     </>
   );
